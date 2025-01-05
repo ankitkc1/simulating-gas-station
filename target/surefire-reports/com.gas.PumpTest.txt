@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.gas.PumpTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in com.gas.PumpTest
+testStartService  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.Random.nextGaussian()" because "com.gas.sim.serviceStream" is null
+	at com.gas.PumpTest.testStartService(PumpTest.java:18)
+
