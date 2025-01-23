@@ -72,7 +72,7 @@ public class statistics {
         double scale = 1; 
         for (int i = 0; i < precision; i++) 
             scale *= 10; 
-        String result = " " + (int) (number*scale + 0.5); 
+        String result = "   " + (int) (number*scale + 0.5); 
         
         //insert decimal point and leading zero if necessay 
         if (precision > 0) { 
@@ -85,7 +85,7 @@ public class statistics {
 
         //pad with blanks if necessary 
         for (int i= result.length(); i < width; i++) 
-            result = " " + result; 
+            result = "  " + result; 
         return result; 
     }
 
@@ -107,9 +107,9 @@ public class statistics {
         //printHeaders: print column titles for the statistics summaries. 
         
     private static void printHeaders () { 
-        System.out.println ("Current   Total   NoQueue     Car->Car    Average      Number      Average     Pump    Total       Loss");
-        System.out.println (" Time      Cars    Fraction    Time        Litres      Balked      Wait        Usage   Profit      Profit");  
-        for (int i = 0; i < 110; i++) 
+        System.out.println ("Current    Total   NoQueue Car->Car    Average Number  Average Pump    Total   Loss");
+        System.out.println (" Time      Cars    Fraction    Time    Litres  Balked   Wait   Usage   Profit  Profit");  
+        for (int i = 0; i < 99; i++) 
             System.out.print ("-"); 
         System.out.println (""); 
     }

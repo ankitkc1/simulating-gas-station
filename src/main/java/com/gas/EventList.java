@@ -6,7 +6,7 @@ public class EventList {
     // Listltem: the class for objects stored in the event list. 
     private class ListItem { 
         // The event list is a linked list, so each item contains a data field 
-        // and a 11next item11 field. This is just a simple record structure, so 
+        // and a next item field. This is just a simple record structure, so 
         // we'll allow outsiders to access the fields directly instead of using 
         // get and set methods. 
         public com.gas.Event data; 
